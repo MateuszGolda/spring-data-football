@@ -33,54 +33,6 @@ public class Match {
     public Match() {
     }
 
-    public long getMatchId() {
-        return matchId;
-    }
-
-    public void setMatchId(long matchId) {
-        this.matchId = matchId;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public Team getHome() {
-        return home;
-    }
-
-    public void setHome(Team homeTeam) {
-        this.home = homeTeam;
-    }
-
-    public Team getAway() {
-        return away;
-    }
-
-    public void setAway(Team awayTeam) {
-        this.away = awayTeam;
-    }
-
-    public int getGoalsHome() {
-        return goalsHome;
-    }
-
-    public void setGoalsHome(int goalsHome) {
-        this.goalsHome = goalsHome;
-    }
-
-    public int getGoalsAway() {
-        return goalsAway;
-    }
-
-    public void setGoalsAway(int goalsAway) {
-        this.goalsAway = goalsAway;
-    }
-
     @Override
     public String toString() {
         return "Match{" +

@@ -56,11 +56,9 @@ public class App {
             log.info("--------------------------------------------");
             teamRepository
                     .findAll()
-                    .forEach(fc -> {
-                        log.info(fc.toString()
-                                + " Goals: "
-                                + teamRepository.findTotalGoalsByTeamId(fc.getTeamId()));
-                    });
+                    .forEach(fc -> log.info(fc.toString()
+                            + " Goals: "
+                            + teamRepository.findTotalGoalsByTeamId(fc.getTeamId())));
             log.info("");
 
             log.info("All matches:");
@@ -70,7 +68,7 @@ public class App {
             }
             log.info("");
 
-            log.info("Last week mMatches:");
+            log.info("Last week matches:");
             log.info("-------------------------------");
             for (Match match : matchRepository.findLastWeekMatches()) {
                 log.info(match.toString());
