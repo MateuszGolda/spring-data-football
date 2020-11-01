@@ -7,9 +7,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface TeamRepository extends CrudRepository<Team, Long> {
-
-    List<Team> findAll();
-
     List<Team> findAllByNameContains(String string);
 
     @Query(value = Queries.BEST_TEAM, nativeQuery = true)
